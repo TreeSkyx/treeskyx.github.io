@@ -8,12 +8,13 @@ html, body {
 
 h1, h2, h3, h4, h5, h6, p {
     margin-bottom: 20px;
+    font-family: sans-serif;
 }
 
 nav {
     position: fixed;
     width: 100%;
-    height: 50px;
+    height: 7%;
     background-color: rgba(0,0,0,.5);
     z-index: 99;
     text-align: center;
@@ -31,7 +32,19 @@ nav a {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-
+.loginBox
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 350px;
+    height: 400px;
+    padding: 80px  40px;
+    box-sizing: border-box;
+    background: rgba(0,0,0,.5);
+    text-align: center;
+}
 .subSection{
     height: 50%;
     background-color: rgba(0,0,0,.5); 
@@ -42,9 +55,5 @@ nav a {
 }
 
 .sectTwo {
-        background-image: url("https://i.pinimg.com/originals/e7/2d/8e/e72d8ebfbb140650b8f460aa8a25fe7c.jpg");
-}
-
-.sectThree {
         background-image: url("https://venngage-wordpress.s3.amazonaws.com/uploads/2018/09/Simple-Minimalist-Background-Image.jpg");
 }
