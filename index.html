@@ -1,18 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Password Checker Game</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pass Me If You Can | Game</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
 </head>
-<body>
-    <h1>Password Checker Game</h1>
-    <div class="container">
-        <label for="password">Enter password:</label>
-        <input type="password" id="password" oninput="checkPassword()">
-        <div id="validation"></div>
+
+<body class="body">
+    <div class="ears">
+        <div class="ear" style="margin-right: 200px;">
+            <img class="innerEar" src="asset/innerEar.png"></img>
+            <img class="borderEar" src="asset/borderEar.png"></img>
+        </div>
+        <div class="ear" style="margin-left: 200px;">
+            <img class="innerEar" src="asset/innerEar.png"></img>
+            <img class="borderEar" src="asset/borderEar.png"></img>
+        </div>
     </div>
-    <script src="script.js"></script>
+    <div class="container">
+        <div class="content">
+            <div class="pop-container">
+                <div class="buzzers">
+                    <div class="buzzer"></div>
+                    <div class="buzzer" style="visibility: hidden;"></div>
+                    <div class="buzzer"></div>
+                    <div class="buzzer" style="visibility: hidden;"></div>
+                    <div class="buzzer"></div>
+                    <div class="buzzer" style="visibility: hidden;"></div>
+                    <div class="buzzer"></div>
+                    <div class="buzzer" style="visibility: hidden;"></div>
+                    <div class="buzzer"></div>
+                </div>
+                <div class="border-popup-list">
+                    <ul class="popup-list">
+                        <li id="r1" class="rule-correct">
+                            <header>
+                                <h4>Rule1:</h4>
+                            </header>
+                            <div>
+                                <p>Your password must be at least 5 characters.</p>
+                            </div>
+                            <div>
+                                <i class="fi fi-rr-check"></i>
+                            </div>
+                        </li>
+                        <li id="r2" class="rule-incorrect">
+                            <header>
+                                <h4>Rule2:</h4>
+                            </header>
+                            <div>
+                                <p>Your password must be at least 5 characters.</p>
+                            </div>
+                            <div>
+                                <i class="fi fi-rr-cross"></i>
+                            </div>
+                        </li>
+                        <li id="r3" class="rule-incorrect">
+                            <header>
+                                <h4>Rule3:</h4>
+                            </header>
+                            <div>
+                                <p>Your password must be at least 5 characters.</p>
+                            </div>
+                            <div>
+                                <i class="fi fi-rr-cross"></i>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="buzzers">
+                    <div class="buzzer"></div>
+                    <div class="buzzer" style="visibility: hidden;"></div>
+                    <div class="buzzer"></div>
+                    <div class="buzzer" style="visibility: hidden;"></div>
+                    <div class="buzzer"></div>
+                    <div class="buzzer" style="visibility: hidden;"></div>
+                    <div class="buzzer"></div>
+                    <div class="buzzer" style="visibility: hidden;"></div>
+                    <div class="buzzer"></div>
+                </div>
+            </div>
+            <h3 class="title"><i class="fi fi-rr-chess-knight-alt"></i> Pass Me If You Can <i
+                    class="fi fi-rr-playing-cards"></i></h3>
+            <div class="input-container">
+                <div class="left pane">
+                    <div class="joystick">
+
+                    </div>
+                    <div class="direction">
+                        <div class="cross-y"></div>
+                        <div class="cross-x"></div>
+                        <div class="cross-y"
+                            style="border: none;position: absolute; bottom: 500px; z-index: +1; width: 37px; height: 126px; margin-left:1px; margin-top:2px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="border-input">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" class="input" placeholder="Enter your password">
+                    <button onclick="checkPassword()">Check Password</button>
+                    <div id="validation"></div>
+
+                </div>
+                <div class="right pane">
+                    <div class="btns">
+                        <div class="btn"></div>
+                        <div class="btn"></div>
+                        <div class="btn"></div>
+                        <div class="btn"></div>
+                    </div>
+                    <div class="link">
+                        <div style="display: flex; width: fit-content; align-items: center;">
+                            <a href="https://github.com/daifugu5246/toc-web" target="_blank">
+                                <div id="source-code" class="btn"></div>
+                            </a>
+                            <label for="source-code">Source code</label>
+                        </div>
+                        <div style="display: flex; width: fit-content; align-items: center;">
+                            <a href="./members.html">
+                                <div id="members" class="btn"></div>
+                            </a>
+                            <label for="members">Members</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        // textarea resizing
+        let textarea = document.getElementById("textarea");
+        // initialize length of textarea value
+        let lenContainer = document.getElementById("len");
+        lenContainer.innerHTML = "Characters : " + textarea.value.length;
+        // textarea length changed
+        textarea.addEventListener('input', lengthChecker, false);
+
+        function lengthChecker() {
+            lenContainer.innerHTML = "Characters : " + this.value.length;
+        }
+    </script>
 </body>
+
 </html>
