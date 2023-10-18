@@ -86,19 +86,16 @@ function is_valid_password(password) {
         return "The password must include the type name of the following language : a^n b^n ; n >= 0 (All in lowercase and no space) " // level 11
     }
 
-
-
     if (!(fruit.some(fruit => password.includes(fruit))))
     {
+        showModal();
         return "The password must include at least one of the name from the following fruits (All in lowercase)" // level 12
     }
     let pattern = /\d/;
-    if (!pattern.test(password)) {
-        return "Password must contain at least one digit.";
-    }
 
-
+    closeModal();
     return "Password is valid.";
+    
 }
 
 function checkPassword() {
@@ -114,4 +111,25 @@ function checkPassword() {
     }
 
     validationDiv.textContent = validationResult;
+}
+
+function showModal() {
+    let modal = document.getElementById("myModal");
+    modal.style.display = "block";
+    let span = document.getElementsByClassName("close")[0];
+    
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+}
+
+function closeModal() {
+    let modal = document.getElementById("myModal");
+    modal.style.display = "none";
 }

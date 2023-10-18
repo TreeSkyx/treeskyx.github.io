@@ -23,3 +23,14 @@ input {
     margin-top: 10px;
     font-weight: bold;
 }
+
+.image-row {
+    display: flex;
+    flex-direction: row; /* Display in a row */
+    align-items: center;
+    justify-content: center;
+}
+
+.image-row img {
+    margin: 0 5px; /* Adjust the margin as needed */
+}
