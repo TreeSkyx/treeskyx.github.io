@@ -98,8 +98,6 @@ function is_valid_password(password) {
     }
 
 
-
-
     return "Password is valid.";
 }
 
@@ -108,6 +106,7 @@ function checkPassword() {
     let validationDiv = document.getElementById("validation");
     let validationResult = is_valid_password(password);
 
+    validationDiv.textContent = "Enter Something";
     if (validationResult.includes("valid")) {
         validationDiv.style.color = "green";
     } else {
