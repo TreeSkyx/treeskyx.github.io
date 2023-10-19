@@ -1,5 +1,5 @@
 function is_valid_password(password) {
-    const specialCharacterRegex = /[!@#$%^&*(),.?":{}|<>]_-'/;
+    const specialCharacterRegex = /[!@#$%^&*(),.?":{}|<>]/;
     const teacherNames = "kietikul"; //Dancethenight@kietikulCaZn9998neptuneVenezuela
     const uppercaseRegex = /[A-Z]/;
     const planetNames = ["mercury", "venus", "earth", "mars", "jupiter", "saturn", "uranus", "neptune"];
