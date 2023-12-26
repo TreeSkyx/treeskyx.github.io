@@ -1,0 +1,55 @@
+/* Portfolio.css */
+.portfolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  .portfolio-window {
+    width: 80%;
+    max-width: 800px;
+    padding: 0.3rem;
+    background-color: #fff;
+    border-radius: 12px; /* Add border-radius for the curved corners */
+    position: relative;
+  }
+  
+  .title-bar {
+    height: 20px;
+    background-color: #eee;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    padding: 0.5rem;
+  }
+  
+  .close-button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ff5f56;
+    cursor: pointer;
+  }
+  
+  .minimize-button{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ffbd2e;
+    margin-left: 4px;
+    cursor: pointer;
+  }
+
+  .maximize-button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #0ef03c;
+    margin-left: 4px;
+    cursor: pointer;
+  }
+  
