@@ -1,9 +1,11 @@
+/* Portfolio.css */
 .portfolio {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 91vh;
-  background-color: #838383;
+  background-image: url("https://img.freepik.com/premium-vector/abstract-smooth-blur-purple-gradient-background-website-banner-paper-card-decorative-design_120819-485.jpg");
+  background-size: cover;
 }
 
 .portfolio-window {
@@ -60,11 +62,27 @@
 
 .portfolio-content {
   flex: 1;
-  padding: 1rem;
+  /* padding: 1rem; */
   padding-left: 2rem;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Center content vertically */
+  justify-content: center;
+}
+
+.portfolio-content .title {
+  font-family: "Roboto", sans-serif;
+  margin: 0%;
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.portfolio-content .subtitle {
+  font-family: "Roboto", sans-serif;
+  color: #65656d;
+  font-size: 16px;
+  line-height: 28px;
+  margin-top: 10px;
+  padding-top: 10px;
 }
 
 .about-me-button {
@@ -91,5 +109,30 @@
 .profile-picture {
   width: 70%;
   height: 70%;
-  border-radius: 100%;
+  /* border-radius: 20%; */
+}
+
+.portfolio-content .homepage-social{
+  align-items: center;
+  display: flex;
+  font-size: 25px;
+  justify-content: left;
+  padding-top: 30px
+}
+
+.portfolio-content .homepage-social a{
+  padding-right: 20px;
+  color: inherit;
+  text-decoration: none;
+}
+.portfolio-content .homepage-social a:link{
+  color: #65656d;
+}
+
+.portfolio-content .homepage-social a:visited{
+  color: #65656d;
+}
+
+.portfolio-content .homepage-social a:hover{
+  color: #65656d;
 }

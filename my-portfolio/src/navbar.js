@@ -1,15 +1,18 @@
+// Navbar.js
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <div className="logo">Your Name</div>
+        {/* Change the 'Home' link to link to the root path */}
+        <div className="logo"><Link to="/" style={{ color: 'white', textDecoration: "none"}}>Home</Link></div>
         <ul className="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><Link to="/about">About</Link></li>
+          <li><Link to="#projects">Projects</Link></li>
+          <li><Link to="#contact">Contact</Link></li>
         </ul>
       </div>
     </nav>
