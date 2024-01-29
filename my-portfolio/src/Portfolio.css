@@ -142,3 +142,54 @@
 .portfolio-content .homepage-social a:hover{
   color: #65656d;
 }
+
+/* Additional CSS for responsiveness */
+@media only screen and (max-width: 768px) {
+  /* Adjustments for smaller screen sizes */
+  .portfolio-content {
+    padding: 0em;
+  }
+  .portfolio-window {
+    width: 90%; 
+    height: auto;
+  }
+
+  .content-container {
+    flex-direction: column; 
+    align-items: center; 
+    padding:  1em;
+  }
+
+  .profile-picture-container {
+    width: 100%; 
+    margin: 20px 0; 
+  }
+
+  .profile-picture {
+    width: 80%; 
+    max-width: 250px; 
+    height: auto; 
+  }
+
+  .portfolio-content .title,
+  .portfolio-content .subtitle {
+    text-align: center; 
+  }
+
+  .portfolio-content .homepage-social {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    padding-top: 20px; 
+  }
+
+  .portfolio-content .homepage-social a {
+    margin: 0 10px; 
+  }
+
+  .about-me-button {
+    width: 100%; 
+    max-width: 200px; 
+    margin: 0 auto;
+  }
+}
