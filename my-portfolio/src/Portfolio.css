@@ -1,9 +1,10 @@
 /* Portfolio.css */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 .portfolio {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 91vh;
+  height: 100vh;
   background-image: url("https://img.freepik.com/premium-vector/abstract-smooth-blur-purple-gradient-background-website-banner-paper-card-decorative-design_120819-485.jpg");
   background-size: cover;
 }
@@ -62,6 +63,7 @@
 
 .portfolio-content {
   flex: 1;
+  font-family: "DM Sans", sans-serif;
   /* padding: 1rem; */
   padding-left: 2rem;
   display: flex;
@@ -70,31 +72,34 @@
 }
 
 .portfolio-content .title {
-  font-family: "Roboto", sans-serif;
   margin: 0%;
-  font-size: 35px;
+  font-size: 50px;
   font-weight: 700;
 }
 
 .portfolio-content .subtitle {
-  font-family: "Roboto", sans-serif;
   color: #65656d;
   font-size: 16px;
   line-height: 28px;
-  margin-top: 10px;
-  padding-top: 10px;
+  margin-top: 5px;
+  padding-bottom: 10px;
 }
 
 .about-me-button {
-  background-color: #3498db;
-  width: 30%;
+  background: linear-gradient(to right, #ff4400, #ad01e1);
+  font-family: "DM Sans", sans-serif;
   color: white;
   padding: 10px 20px;
+  width: 200px;
   border: none;
   border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
-  margin-top: 10px;
+  transition: background 0.3s ease; /* Smooth transition on hover */
+}
+
+.about-me-button:hover {
+  background: linear-gradient(to right, #ee0979, #ff6a00);
 }
 
 .profile-picture-container {
@@ -107,9 +112,10 @@
 }
 
 .profile-picture {
-  width: 70%;
+  width: 80%;
   height: 70%;
-  /* border-radius: 20%; */
+  object-fit: cover;
+  border-radius: 20%;
 }
 
 .portfolio-content .homepage-social{

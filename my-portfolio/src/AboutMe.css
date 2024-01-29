@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 91vh;
+    height: 100vh;
     background-image: url("https://img.freepik.com/premium-vector/abstract-smooth-blur-purple-gradient-background-website-banner-paper-card-decorative-design_120819-485.jpg");
     background-size: cover;
   }
@@ -66,75 +66,106 @@
     padding-left: 2rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    font-family: "DM Sans", sans-serif;
   }
-  
-  .about-me-content .title {
-    font-family: "Roboto", sans-serif;
-    margin: 0%;
-    font-size: 35px;
+  .about-me-content .topic {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 30px;
     font-weight: 700;
   }
   
-  .about-me-content .subtitle {
-    font-family: "Roboto", sans-serif;
+  .about-me-content .aboutme-title {
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  .about-me-content .aboutme-description {
     color: #65656d;
     font-size: 16px;
     line-height: 28px;
     margin-top: 10px;
     padding-top: 10px;
+    padding-bottom: 20px;
+  }
+
+  .details-container {
+    display: flex;
   }
   
-  .about-me-button {
-    background-color: #3498db;
-    width: 30%;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
+  .column {
+    flex: 1;
+    margin-right: 20px; /* Adjust the margin as needed for spacing between columns */
+  }
+  .column .logo-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .column .logo-container .logo-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     margin-top: 10px;
   }
-  
-  .profile-picture-container {
-    padding: 0.5rem;
-    width: 40%;
-    margin-left: 20px;
+
+  .detail {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    align-items: baseline; /* Align title and description on the same line */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc; /* Add a 1px solid line below each detail */
   }
   
-  .profile-picture {
-    width: 70%;
-    height: 70%;
-    /* border-radius: 20%; */
+  .detail-title {
+    font-weight: bold;
+    margin-right: 8px;
+  }
+
+  .edu-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   
-  .about-me-content .homepage-social {
-    align-items: center;
+  .timeline {
+    position: relative;
+  }
+  
+  .edu-description ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .edu-description li {
+    align-items: flex-start;
+    padding-left: 30px;
+    margin-bottom: 20px;
     display: flex;
-    font-size: 25px;
-    justify-content: left;
-    padding-top: 30px;
   }
   
-  .about-me-content .homepage-social a {
-    padding-right: 20px;
-    color: inherit;
-    text-decoration: none;
+  .edu-description li::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px; /* Width of the line */
+    height: 100%; /* Height of the line */
+    background-color: #333; /* Color of the line */
   }
   
-  .about-me-content .homepage-social a:link {
-    color: #65656d;
+  .edu-description li .edu-year {
+    font-weight: bold;
+    min-width: 120px;
+    margin-bottom: 5px;
+    display: block;
+    margin-right: 10px;
+  }
+
+  .edu-description li .edu-info {
+    flex-grow: 1;
   }
   
-  .about-me-content .homepage-social a:visited {
-    color: #65656d;
-  }
+
   
-  .about-me-content .homepage-social a:hover {
-    color: #65656d;
-  }
   

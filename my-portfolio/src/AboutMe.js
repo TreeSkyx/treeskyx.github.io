@@ -1,14 +1,8 @@
 // AboutMe.js
 import React from "react";
 import "./AboutMe.css"; // Create this file for styling
-// import profilePicture from './assets/TF_img.JPG'; // Replace with the actual path to your picture
 
 const AboutMe = () => {
-
-  const githubProfileUrl = "https://github.com/TreeSkyx";
-  const linkedinProfileUrl = "https://www.linkedin.com/in/wiroon-somphaothong/"; // Replace with your LinkedIn profile URL
-  const gmailAddress = "mailto:wiroom.som@gmail.com"
-
   return (
     <div className="about-me">
       <div className="about-me-window">
@@ -19,43 +13,136 @@ const AboutMe = () => {
         </div>
         <div className="content-container">
           <div className="about-me-content">
-            <div className="title">
-              Hello, It's Me
-              <br />
-              Wiroon Somphaothong
+            <div className="topic"> About Me </div>
+
+            <div className="aboutme-title">
+              I'm Wiroon Somphaothong and{" "}
+              <span style={{ color: "#1869FF" }}>Web Developer</span>
             </div>
-            <div className="subtitle">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+            <div className="aboutme-description">
+              Hello, I'm Wiroon Somphaothong, currently pursuing a degree in
+              Computer Engineering at King Mongkut's Institute of Technology
+              Ladkrabang. My academic focus revolves around Web development and
+              Embedded Engineering, areas that captivate my interest and drive
+              my passion for innovative technologies.
             </div>
-            <div className="homepage-social">
-              <a
-                href={githubProfileUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fab fa-github"></i>
-              </a>
-              <a
-                href={linkedinProfileUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fab fa-linkedin"></i>
-              </a>
-              <a href={gmailAddress} target="_blank" rel="noopener noreferrer">
-                <i className="far fa-envelope"></i> {/* You can use a different icon class if needed */}
-              </a>
+            <div className="details-container">
+              {/* Left column */}
+              <div className="column">
+                <div className="detail">
+                  <div className="detail-title">Age:</div>
+                  <div className="detail-description">21</div>
+                </div>
+                <div className="detail">
+                  <div className="detail-title">Degree:</div>
+                  <div className="detail-description">
+                  Bachelor of Engineering Program in Computer Engineering
+                  <br />
+                  
+                  </div>
+                </div>
+                <div className="detail">
+                  <div className="detail-title">City:</div>
+                  <div className="detail-description">Bangkok, Thailand</div>
+                </div>
+
+                {/* Add more details as needed */}
+              </div>
+
+              {/* Right column */}
+              <div className="column">
+                <div className="detail">
+                  <div className="detail-title">Email:</div>
+                  <div className="detail-description">wiroon.som@gmail.com</div>
+                </div>
+                <div className="detail">
+                  <div className="detail-title">Github:</div>
+                  <div className="detail-description">
+                    https://github.com/TreeSkyx
+                  </div>
+                </div>
+                <div className="detail">
+                  <div className="detail-title">LinkedIn:</div>
+                  <div className="detail-description">Wiroon Somphaothong</div>
+                </div>
+                <div className="detail">
+                  <div className="detail-title">Email:</div>
+                  <div className="detail-description">wiroon.som@gmail.com</div>
+                </div>
+              </div>
+              <div className="column">
+                Languages i used :
+                <div className="logo-container">
+                  <div className="logo-row">
+                    <img
+                      src="https://cdn.jsdelivr.net/npm/programming-languages-logos/src/html/html.png"
+                      alt="HTML5"
+                      width={"50px"}
+                      height={"50px"}
+                    />
+                    <img
+                      src="https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png"
+                      alt="JS"
+                      width={"40px"}
+                      height={"40px"}
+                    />
+                    <img
+                      src="https://cdn.jsdelivr.net/npm/@programming-languages-logos/python@0.0.0/python_256x256.png"
+                      alt="py"
+                      width={"40px"}
+                      height={"40px"}
+                    />
+                    <img
+                      src="https://cdn.jsdelivr.net/npm/@programming-languages-logos/c@0.0.3/c_256x256.png"
+                      alt="c"
+                      width={"40px"}
+                      height={"40px"}
+                    />
+                    <img
+                      src="https://cdn.jsdelivr.net/npm/@programming-languages-logos/cpp@0.0.2/cpp_256x256.png"
+                      alt="cpp"
+                      width={"40px"}
+                      height={"40px"}
+                    />
+                  </div>
+                  <div className="logo-row">
+                    <img
+                      src="https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/java/java_256x256.png"
+                      alt="java"
+                      width={"40px"}
+                      height={"40px"}
+                    />
+                    <img
+                      src="https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/go/go_256x256.png"
+                      alt="go"
+                      width={"40px"}
+                      height={"40px"}
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div className="profile-picture-container">
-            <img
-              src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b7489cf6-f701-4e8e-a6e7-08c8924ef45b/desffdw-54e57546-2746-4bf3-aaf4-7f8f4bdd9c6a.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2I3NDg5Y2Y2LWY3MDEtNGU4ZS1hNmU3LTA4Yzg5MjRlZjQ1YlwvZGVzZmZkdy01NGU1NzU0Ni0yNzQ2LTRiZjMtYWFmNC03ZjhmNGJkZDljNmEucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.5IW5rmL6OPxmFWT2RbplfmOL2ZWpcNvi1OR29EfGg8M"
-              alt="Profile"
-              className="profile-picture"
-            />
+            <div className="edu-title">Education</div>
+            <div className="timeline">
+              <div className="edu-description">
+                <ul className="edu-list">
+                  <li>
+                    <span className="edu-year">- University</span>
+                    <div className="edu-info">
+                    (2023 - Present)<br />
+                    King Mongkut's Institute of Technology Ladkrabang 
+                    </div>
+                  </li>
+                  <li>
+                    <span className="edu-year">- High School</span>
+                    <div className="edu-info">
+                    (2018 - 2021)<br />
+                    Princess Chulabhorn Science High School Phitsanulok
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
