@@ -11,7 +11,7 @@ const Navbar = () => {
         <div className="logo"><Link to="/" style={{ color: 'white', textDecoration: "none"}}>Home</Link></div>
         <ul className="nav-links">
           <li><Link to="/about">About</Link></li>
-          <li><Link to="#projects">Projects</Link></li>
+          <li><Link to="/projects">Projects</Link></li>
           <li><Link to="#contact">Contact</Link></li>
         </ul>
       </div>
