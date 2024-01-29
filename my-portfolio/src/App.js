@@ -6,6 +6,7 @@ import './App.css';
 import Portfolio from './Portfolio.js';
 import AboutMe from './AboutMe.js';
 import Projects from './Projects.js';
+import Contact from './Contact.js';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/" element={<Portfolio />} />
           <Route path="/about" element={<AboutMe />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
     </Router>
