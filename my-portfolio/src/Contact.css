@@ -1,6 +1,6 @@
 /* Contact.css */
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
-.projects {
+.contact {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,7 +9,7 @@
   background-size: cover;
 }
 
-.projects-window {
+.contact-window {
   width: 100%;
   height: 70vh;
   max-width: 1000px;
@@ -61,7 +61,7 @@
   height: 90%;
 }
 
-.projects-content {
+.contact-content {
   flex: 1;
   font-family: "DM Sans", sans-serif;
   /* padding: 1rem; */
@@ -70,73 +70,42 @@
   flex-direction: column;
 }
 
-.projects-content  .title {
-    padding-top: 10px;
-    padding-bottom: 10px;
+.contact-content  .title {
+    padding-top: 40px;
+    padding-bottom: 20px;
     font-size: 30px;
     font-weight: 700;
 }
 
-.projects-content .description {
+.contact-content .description {
     color: #65656d;
     font-size: 16px;
     line-height: 28px;
     padding-bottom: 20px;
+    max-width: 80%;
 }
-  
-  .project-list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three projects per row */
-    grid-gap: 20px; /* Adjust the gap between projects */
-    padding-right: 2em;
-  }
-  
-  .project {
-    background-color: #f9f9f9; /* Background color for each project */
-    padding: 15px;
-    border-radius: 8px; /* Rounded corners for the project box */
-    font-family: "DM Sans", sans-serif;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .project:hover {
-    background-color: #ebebeb;
-  }
-  
-  .project-title {
-    font-size: 16px;
-    font-weight: 700;
-    margin-bottom: 1em;
-    padding-top: 5px;
-    color: #27272a;
-  }
 
-  .project-description {
-    color: #65656d;
-    margin-bottom: 5px;
-  }
-
-  .project-button {
-    margin-top: auto;
-    display: flex;
+.contact-content .homepage-social{
     align-items: center;
-    justify-content: flex-start;
-    padding: 5px 0px;
-    color: #65656d; /* Button text color */
-    border: none;
-    border-radius: 5px;
+    display: flex;
+    font-size: 25px;
+    justify-content: left;
+    padding-top: 30px
+  }
+  
+  .contact-content .homepage-social a{
+    padding-right: 20px;
+    color: inherit;
     text-decoration: none;
-    font-size: 16px;
-    cursor: pointer;
+  }
+  .contact-content .homepage-social a:link{
+    color: #65656d;
   }
   
-  .project-button .link-icon {
-    margin-right: 10px; 
+  .contact-content .homepage-social a:visited{
+    color: #65656d;
   }
   
-  .project-button:hover {
-    color: #900e9a;
+  .contact-content .homepage-social a:hover{
+    color: #65656d;
   }
-  
-  
