@@ -3,20 +3,35 @@ import "./Projects.css";
 import { FaExternalLinkAlt } from 'react-icons/fa';
 
 const Project = ({ title, description, tech, link }) => {
-  // Function to get the corresponding icon based on the technology
   const getIcon = (tech) => {
     switch (tech) {
-      case "JavaScript":
+      case "JS":
         return (
           <img
             src="https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png"
             alt="JavaScript"
-            width={"30px"}
-            height={"30px"}
+            width={"35px"}
+            height={"35px"}
           />
         );
-      case "React":
-        return <img src="react-icon.png" alt="React" />;
+      case "MATLAB":
+        return (
+            <img
+            src="https://tsgdoc.socsci.ru.nl/images/2/21/Matlab_Logo.png"
+            alt="MATLAB"
+            width={"35px"}
+            height={"35px"}
+          />
+        );
+        case "C":
+        return (
+            <img
+            src="https://cdn.jsdelivr.net/npm/@programming-languages-logos/c@0.0.3/c_256x256.png"
+            alt="C"
+            width={"35px"}
+            height={"35px"}
+          />
+        );
       default:
         return null;
     }
@@ -51,22 +66,34 @@ const Projects = () => {
             </div>
             <div className="project-list">
               <Project
-                title="Project 1"
-                description="Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima."
-                tech="JavaScript"
-                link="https://www.example1.com"
-              />
-              <Project
-                title="Project 2"
-                description="Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima."
+                title="Teacher Assistant Managing System"
+                description="Website for ercuit and manage teacher assistant in class."
                 tech="JS"
-                link="https://www.example2.com"
+                link=""
               />
               <Project
-                title="Project 3"
-                description="Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima."
+                title="Monitoring and Management System of Flood and Drought Conditions"
+                description="Create system and develop model for water level and flow rate prediction. "
+                tech="MATLAB"
+                link="https://github.com/TreeSkyx/TGR17_H2O"
+              />
+              <Project
+                title="Portfolio Website"
+                description="Website for explain my passion in the Website development. Using React, NextJS and MUI"
+                tech="JS"
+                link="https://treeskyx.github.io/"
+              />
+              <Project
+                title="Network laboratory online exam website"
+                description="Exam website for admission of members to the Network laboratory. Using React and Flask "
                 tech="JS"
                 link="https://www.example3.com"
+              />
+              <Project
+                title="Hope Among the star Project"
+                description="Game development project using C and C++. This game is a Space-Shooting game that player need to shoot down the enemy ships."
+                tech="C"
+                link="https://github.com/TreeSkyx/Hope_Among_The_Star"
               />
             </div>
           </div>
