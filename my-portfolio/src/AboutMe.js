@@ -11,7 +11,7 @@ const AboutMe = () => {
           <div className="minimize-button"></div>
           <div className="maximize-button"></div>
         </div>
-        <div className="content-container">
+        <div className="about-content-container">
           <div className="about-me-content">
             <div className="topic"> About Me </div>
 
@@ -45,8 +45,6 @@ const AboutMe = () => {
                   <div className="detail-title">City:</div>
                   <div className="detail-description">Bangkok, Thailand</div>
                 </div>
-
-                {/* Add more details as needed */}
               </div>
 
               {/* Right column */}

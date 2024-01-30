@@ -9,13 +9,13 @@
   }
   
   .about-me-window {
-    width: 100%;
-    height: 70vh;
-    max-width: 1000px;
-    /* padding: 0.5rem; */
-    background-color: #fff;
-    border-radius: 12px;
-    position: relative;
+  width: 100%;
+  height: 70vh;
+  max-width: 1000px;
+  /* padding: 0.5rem; */
+  background-color: #fff;
+  border-radius: 12px;
+  position: relative;
   }
   
   .title-bar {
@@ -55,15 +55,18 @@
     cursor: pointer;
   }
   
-  .content-container {
+  .about-content-container {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     height: 90%;
+    overflow: auto;
   }
   
   .about-me-content {
-    flex: 1;
-    /* padding: 1rem; */
+    flex: 1; /* Add flex property to allow the content to expand */
     padding-left: 2rem;
+    padding-right: 2rem; /* Add padding to the content */
     display: flex;
     flex-direction: column;
     font-family: "DM Sans", sans-serif;
@@ -164,6 +167,7 @@
 
   .edu-description li .edu-info {
     flex-grow: 1;
+    min-width: 100%;
   }
 
 /* AboutMe.css */
@@ -173,12 +177,25 @@
 /* Additional CSS for responsiveness */
 @media only screen and (max-width: 768px) {
     .about-me-window {
-      width: 90%;
-      height: auto;
-      padding: 1em;
-      box-sizing: border-box;
-      overflow: auto; /* Add overflow property to enable scrolling if content overflows */
-    }
+    width: 90%;
+    min-height: 70vh; /* Set minimum height to maintain visibility */
+    max-height: 90vh; /* Set maximum height to allow scrolling if content exceeds */
+    overflow-y: hidden; /* Add vertical scrolling if content exceeds the height */
+    box-sizing: border-box;
+  }
+
+  .about-content-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    height: 100%; /* Set height to fill the parent container */
+  }
+
+  .about-me-content {
+    padding-left: 0;
+    padding-right: 0;
+    height: 100%; /* Set height to fill the parent container */
+  }
   
     .title-bar {
       height: 30px;
@@ -271,6 +288,3 @@
       display: block;
     }
   }
-  
-  
-  
