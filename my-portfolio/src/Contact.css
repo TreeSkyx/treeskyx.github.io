@@ -1,10 +1,11 @@
 /* Contact.css */
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
 .contact {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  padding:0 2em ;
+  min-height: 100vh; /* Change height to min-height for responsiveness */
   background-image: url("https://img.freepik.com/premium-vector/abstract-smooth-blur-purple-gradient-background-website-banner-paper-card-decorative-design_120819-485.jpg");
   background-size: cover;
 }
@@ -13,7 +14,6 @@
   width: 100%;
   height: 70vh;
   max-width: 1000px;
-  /* padding: 0.5rem; */
   background-color: #fff;
   border-radius: 12px;
   position: relative;
@@ -30,82 +30,64 @@
   padding: 0.5rem;
 }
 
-.close-button {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: #ff5f56;
-  cursor: pointer;
-}
-
-.minimize-button {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: #ffbd2e;
-  margin-left: 4px;
-  cursor: pointer;
-}
-
+.close-button,
+.minimize-button,
 .maximize-button {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: #0ef03c;
-  margin-left: 4px;
   cursor: pointer;
 }
 
-.content-container {
+.contact-content-container {
   display: flex;
-  height: 90%;
+    flex-direction: column;
+    align-items: center;
+    height: 90%;
+    overflow: auto;
 }
 
 .contact-content {
   flex: 1;
   font-family: "DM Sans", sans-serif;
-  /* padding: 1rem; */
-  padding-left: 2rem;
+  padding: 1rem; /* Add padding for better spacing */
   display: flex;
   flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  text-align: center; /* Center text */
 }
 
-.contact-content  .title {
-    padding-top: 40px;
-    padding-bottom: 20px;
-    font-size: 30px;
-    font-weight: 700;
+.contact-content .title {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  font-size: 30px;
+  font-weight: 700;
 }
 
 .contact-content .description {
-    color: #65656d;
-    font-size: 16px;
-    line-height: 28px;
-    padding-bottom: 20px;
-    max-width: 80%;
+  color: #65656d;
+  font-size: 16px;
+  line-height: 28px;
+  padding-bottom: 20px;
+  max-width: 80%;
 }
 
-.contact-content .homepage-social{
-    align-items: center;
-    display: flex;
-    font-size: 25px;
-    justify-content: left;
-    padding-top: 30px
-  }
-  
-  .contact-content .homepage-social a{
-    padding-right: 20px;
-    color: inherit;
-    text-decoration: none;
-  }
-  .contact-content .homepage-social a:link{
-    color: #65656d;
-  }
-  
-  .contact-content .homepage-social a:visited{
-    color: #65656d;
-  }
-  
-  .contact-content .homepage-social a:hover{
-    color: #65656d;
-  }
+.contact-content .homepage-social {
+  display: flex;
+  justify-content: center; /* Center social links horizontally */
+  align-items: center;
+  font-size: 25px;
+  padding-top: 30px;
+}
+
+.contact-content .homepage-social a {
+  margin: 0 10px; /* Add margin for spacing between links */
+  color: inherit;
+  text-decoration: none;
+}
+
+.contact-content .homepage-social a:link,
+.contact-content .homepage-social a:visited,
+.contact-content .homepage-social a:hover {
+  color: #65656d; /* Set link color */
+}

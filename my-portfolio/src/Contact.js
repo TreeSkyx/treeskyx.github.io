@@ -14,7 +14,7 @@ const Contact = () => {
           <div className="minimize-button"></div>
           <div className="maximize-button"></div>
         </div>
-        <div className="content-container">
+        <div className="contact-content-container">
           <div className="contact-content">
             <div className="title">Stay Connected: How to Reach Me</div>
             <div className="description">
