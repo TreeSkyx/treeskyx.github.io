@@ -17,6 +17,7 @@
   background-color: #fff;
   border-radius: 12px;
   position: relative;
+  overflow: hidden; /* Prevent content overflow */
 }
 
 .title-bar {
@@ -89,6 +90,7 @@
     grid-template-columns: repeat(3, 1fr); /* Three projects per row */
     grid-gap: 20px; /* Adjust the gap between projects */
     padding-right: 2em;
+    overflow: auto;
   }
   
   .project {
@@ -139,4 +141,62 @@
     color: #900e9a;
   }
   
+/* Projects.css */
+
+/* Additional CSS for responsiveness */
+@media only screen and (max-width: 768px) {
+  .projects-window {
+    width: 90%;
+    min-height: 70vh; /* Set minimum height to maintain visibility */
+    max-height: 90vh; /* Set maximum height to allow scrolling if content exceeds */
+    overflow-y: hidden; /* Add vertical scrolling if content exceeds the height */
+    box-sizing: border-box;
+  }
+
+  .content-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    height: 100%; /* Set height to fill the parent container */
+  }
+
+  .projects-content {
+    padding-left: 0;
+    padding-right: 0;
+    height: 100%; /* Set height to fill the parent container */
+  }
+
+  .project-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    height: 100%; /* Set height to fill the parent container */
+    overflow-y: auto; /* Add vertical scrolling if content exceeds the height */
+  }
+
+  .project {
+    width: 90%;
+    max-width: 350px;
+    margin-bottom: 20px;
+  }
+
+  .project-title {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .project-description {
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  .project-button {
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+  }
+}
+
   

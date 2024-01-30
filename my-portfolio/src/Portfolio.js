@@ -1,7 +1,7 @@
 // Portfolio.js
 import React from "react";
 import "./Portfolio.css"; // Create this file for styling
-import profilePicture from "./assets/TF_img.jpg"; // Replace with the actual path to your picture
+import profilePicture from "./assets/TF_img.JPG"; // Replace with the actual path to your picture
 
 const Portfolio = () => {
   const githubProfileUrl = "https://github.com/TreeSkyx";
