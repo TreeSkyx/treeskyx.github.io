@@ -2,6 +2,7 @@
 import React from "react";
 import "./Portfolio.css"; // Create this file for styling
 import profilePicture from "./assets/TF_img.JPG"; // Replace with the actual path to your picture
+import { Link } from "react-router-dom";
 
 const Portfolio = () => {
   const githubProfileUrl = "https://github.com/TreeSkyx";
@@ -30,7 +31,9 @@ const Portfolio = () => {
               King Mongkut's Institute of Technology Ladkrabang. I'm passionate
               about Web development and Embedded Engineering.
             </div>
+            <Link to ="https://drive.google.com/file/d/1yepbSoD10SKgkGoK8BAM0LqQ93_VYX56/view?usp=sharing">
             <button className="about-me-button">About Me</button>
+            </Link>
             <div className="homepage-social">
               <a
                 href={githubProfileUrl}
