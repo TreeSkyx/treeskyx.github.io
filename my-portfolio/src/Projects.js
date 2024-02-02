@@ -87,7 +87,7 @@ const Projects = () => {
                 title="Network laboratory online exam website"
                 description="Exam website for admission of members to the Network laboratory. Using React and Flask "
                 tech="JS"
-                link="https://www.example3.com"
+                link=""
               />
               <Project
                 title="Hope Among the star Project"
