@@ -90,11 +90,18 @@ const Projects = () => {
                 link=""
               />
               <Project
+                title="TravelerTale"
+                description="Travel website for provide information about point of interest, local products, locataion and services using React, Nextjs, Tailwind, PostgreSQL and developing base on Agile. "
+                tech="JS"
+                link=""
+              />
+              <Project
                 title="Hope Among the star Project"
                 description="Game development project using C and C++. This game is a Space-Shooting game that player need to shoot down the enemy ships."
                 tech="C"
                 link="https://github.com/TreeSkyx/Hope_Among_The_Star"
               />
+              
             </div>
           </div>
         </div>

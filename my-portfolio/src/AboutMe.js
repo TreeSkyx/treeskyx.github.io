@@ -116,6 +116,12 @@ const AboutMe = () => {
                       width={"40px"}
                       height={"40px"}
                     />
+                    <img
+                      src="https://tsgdoc.socsci.ru.nl/images/2/21/Matlab_Logo.png"
+                      alt="matlab"
+                      width={"40px"}
+                      height={"40px"}
+                    />
                   </div>
                 </div>
               </div>
