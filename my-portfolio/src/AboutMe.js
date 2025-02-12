@@ -31,7 +31,7 @@ const AboutMe = () => {
               <div className="column">
                 <div className="detail">
                   <div className="detail-title">Age:</div>
-                  <div className="detail-description">21</div>
+                  <div className="detail-description">22</div>
                 </div>
                 <div className="detail">
                   <div className="detail-title">Degree:</div>
